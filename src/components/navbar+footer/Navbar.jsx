@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { FaGithub } from "react-icons/fa";
+import { FaInstagram, FaTwitter } from "react-icons/fa";
 import { TiThMenu, TiTimes } from "react-icons/ti";
-import { MdFindInPage } from "react-icons/md";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -14,17 +13,6 @@ const Navbar = () => {
     { name: "About", path: "/about" },
     { name: "Jobs", path: "/jobs" },
     { name: "Contact", path: "/contact" },
-  ];
-
-  const socials = [
-    {
-      icon: <MdFindInPage className="sidenav-icon" />,
-      href: "https://fakestoreapi.com/",
-    },
-    {
-      icon: <FaGithub className="sidenav-icon" />,
-      href: "https://github.com/keikaavousi/fake-store-api",
-    },
   ];
 
   const location = useLocation();
@@ -60,19 +48,7 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
-              <div className="socials">
-                {socials.map((social, index) => (
-                  <a
-                    href={social.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="social"
-                    key={index}
-                  >
-                    {social.icon}
-                  </a>
-                ))}
-              </div>
+
               <a
                 href="https://github.com/kxngollan"
                 target="_blank"
@@ -101,6 +77,10 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+      <div className="socials">
+        <FaInstagram className="nav-icon" />
+        <FaTwitter className="nav-icon" />
+      </div>
     </nav>
   );
 };
