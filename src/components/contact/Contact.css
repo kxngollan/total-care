@@ -1,0 +1,126 @@
+.contact {
+  margin-top: 5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.contact__title {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
+.contact__title h1 {
+  font-weight: 400;
+  font-size: 3.5rem;
+}
+
+.contact__container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-self: center;
+}
+
+.contact_form {
+  grid-column: span 6;
+}
+
+.formSentOverlay {
+  background-color: #00000094;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  margin-right: 40px;
+}
+
+.contact_form fieldset {
+  border: none;
+  padding: 0;
+}
+
+.contact_form fieldset:disabled {
+  background-color: #51515194;
+  border-color: #a4a4a4;
+}
+
+.contact_form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact_form form label {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 34px;
+}
+
+.contact_form form input,
+.contact_form form textarea {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  border: 3px solid #000000;
+  box-shadow: 12px 14px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1.2rem;
+  padding: 5px 10px;
+}
+
+.contact_form form input {
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact_form form input:focus,
+.contact_form form textarea:focus {
+  border: 3px solid #8390fa;
+}
+
+.contact_form form input:invalid,
+.contact_form form textarea:invalid {
+  border: 3px solid red;
+}
+
+.contact_form form textarea {
+  height: 200px;
+  resize: none;
+}
+
+.contact_form form button {
+  box-shadow: 8px 10px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  width: 150px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  line-height: 33px;
+  margin-top: 2rem;
+  padding: 15px 15px;
+  cursor: pointer;
+  border: 3px solid #000;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.27' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 12px;
+  color: #000;
+  text-shadow: 2px 2px 6px #ffffff;
+}
+
+.contact_form form .disabledButton {
+  visibility: collapse;
+  height: 0;
+  padding: 0;
+}
+
+.contact_form form span {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+.contact_alternative {
+  grid-column: span 6;
+  font-size: 1.3rem;
+  font-family: "Source Serif Pro";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  margin-left: 80px;
+}

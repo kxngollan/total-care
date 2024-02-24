@@ -1,0 +1,48 @@
+#landing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 100px 100px;
+}
+#landing .content h1 {
+  color: var(--color-black);
+  font-size: 6vw;
+  margin: 0%;
+}
+#landing .desk {
+  width: 40%;
+}
+#landing .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#landing .content p {
+  max-width: 400px;
+  padding: 50px 0px;
+  line-height: 20px;
+}
+#landing .client {
+  display: flex;
+  margin: 50px 0 0 0;
+}
+#landing .content img {
+  height: 30%;
+  width: auto;
+  margin: 2em 1em;
+}
+#landing .mob {
+  display: none;
+}
+#landing a {
+  background-color: var(--color-black);
+  color: var(--color-almostWhite);
+  border-radius: 10px;
+  padding: 10px 30px;
+}
+#landing a:hover {
+  background-color: var(--color-almostWhite);
+  color: var(--color-black);
+  border: 2px solid var(--color-black);
+}
