@@ -1,7 +1,21 @@
 footer {
   width: 100vw;
-  background-color: #ff7e1b;
+  background-color: #02559c;
   margin: 0;
   height: 8rem;
   margin-top: 2rem;
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+footer ul li {
+  font-size: 1.5rem;
+  width: 20rem;
+  list-style: none;
 }

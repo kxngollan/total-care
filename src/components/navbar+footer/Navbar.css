@@ -36,7 +36,7 @@ nav::after {
 }
 
 .nav-title h1 {
-  color: #ff7e1b;
+  color: #02559c;
   font-size: 2rem;
 }
 
@@ -51,7 +51,7 @@ nav::after {
 .nav-links li a {
   text-decoration: none;
   color: gray;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .nav-links li {
@@ -68,7 +68,7 @@ nav::after {
   bottom: -5px;
   left: 0;
   width: 0;
-  background-color: #ff7e1b;
+  background-color: #02559c;
   height: 3px;
   transition: width 0.3s ease;
 }
@@ -78,8 +78,8 @@ nav::after {
 }
 
 .active-link a {
-  background-color: #ff7e1b;
-  color: #000 !important;
+  background-color: #02559c;
+  color: #fff !important;
   padding: 3px;
   border-radius: 5px;
 }

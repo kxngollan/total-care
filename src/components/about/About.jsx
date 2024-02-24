@@ -37,14 +37,14 @@ const About = () => {
     <section id="about">
       <h1>About Us</h1>
       <p>
-        Welcome to Total Care Recruitment, your trusted partner in navigating
-        the dynamic world of talent acquisition and career advancement. At Total
-        Care Recruitment, we pride ourselves on delivering comprehensive
+        Welcome to Totally Care Recruitment, your trusted partner in navigating
+        the dynamic world of talent acquisition and career advancement. At
+        Totally Care Recruitment, we pride ourselves on delivering comprehensive
         solutions that prioritize the needs of both employers and job seekers.
         With a steadfast commitment to excellence, integrity, and personalized
         service, we strive to exceed expectations in every interaction. Whether
         you're a company seeking top-tier talent or an individual pursuing your
-        next career opportunity, Total Care Recruitment is here to provide
+        next career opportunity, Totally Care Recruitment is here to provide
         expert guidance and support every step of the way. Together, let's
         unlock the full potential of your workforce and propel your career to
         new heights.

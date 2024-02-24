@@ -11,7 +11,7 @@ const Landing = () => {
         </h1>
         <p>
           Find the ideal job for you and build your career with{" "}
-          <strong>Total Care Recruitment</strong>. We are here to help you
+          <strong>Totally Care Recruitment</strong>. We are here to help you
           strive and be all you can be!
         </p>
         <a href="#" className="btn">

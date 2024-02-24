@@ -10,8 +10,10 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", path: "/" },
+    // About make a drop down for Home section
     { name: "About", path: "/about" },
-    { name: "Jobs", path: "/jobs" },
+    { name: "Clients", path: "/clients" },
+    { name: "Candidates", path: "/candidates" },
     { name: "Contact", path: "/contact" },
   ];
 
