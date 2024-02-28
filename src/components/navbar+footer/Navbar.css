@@ -1,3 +1,5 @@
+/* Navbar CSS */
+
 nav {
   display: flex;
   position: relative;
@@ -52,10 +54,12 @@ nav::after {
   text-decoration: none;
   color: gray;
   font-size: 1.5rem;
+  padding: 3px;
 }
 
 .nav-links li {
   position: relative;
+  padding: 4px;
 }
 
 .nav-links li a:hover {

@@ -10,10 +10,22 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    // About make a drop down for Home section
-    { name: "About", path: "/about" },
-    { name: "Clients", path: "/clients" },
-    { name: "Candidates", path: "/candidates" },
+    {
+      name: "About",
+      subMenu: [
+        { name: "Home", path: "/" },
+        { name: "About", path: "/about" },
+        { name: "Meet the Team", path: "/meet-the-team" },
+      ],
+    },
+    {
+      name: "Join Us",
+      subMenu: [
+        { name: "Clients", path: "/clients" },
+        { name: "Candidates", path: "/candidates" },
+        { name: "Internal", path: "/internal" },
+      ],
+    },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -38,19 +50,44 @@ const Navbar = () => {
               <TiTimes className="nav-icon" onClick={() => toggle("sidenav")} />
               <ul className="sidenav-links">
                 {navLinks.map((link, index) => (
-                  <li
-                    key={index}
-                    className={
-                      link.path === location.pathname ? "active-link" : ""
-                    }
-                  >
-                    <Link to={link.path} onClick={() => setSidenav(false)}>
-                      {link.name}
-                    </Link>
+                  <li key={index}>
+                    {link.subMenu ? (
+                      <>
+                        <span>{link.name}</span>
+                        <ul>
+                          {link.subMenu.map((subLink, subIndex) => (
+                            <li
+                              key={subIndex}
+                              className={
+                                subLink.path === location.pathname
+                                  ? "active-link"
+                                  : ""
+                              }
+                            >
+                              <Link
+                                to={subLink.path}
+                                onClick={() => setSidenav(false)}
+                              >
+                                {subLink.name}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </>
+                    ) : (
+                      <Link
+                        to={link.path}
+                        onClick={() => setSidenav(false)}
+                        className={
+                          link.path === location.pathname ? "active-link" : ""
+                        }
+                      >
+                        {link.name}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
-
               <a
                 href="https://github.com/kxngollan"
                 target="_blank"
@@ -69,16 +106,6 @@ const Navbar = () => {
           <h1>TCR</h1>
         </div>
       </Link>
-      <ul className="nav-links">
-        {navLinks.map((link, index) => (
-          <li
-            key={index}
-            className={link.path === location.pathname ? "active-link" : ""}
-          >
-            <Link to={link.path}>{link.name}</Link>
-          </li>
-        ))}
-      </ul>
       <div className="socials">
         <FaInstagram className="nav-icon" />
         <FaTwitter className="nav-icon" />

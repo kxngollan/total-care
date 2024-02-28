@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: space-between;
 }
+
 #landing .content h1 {
   color: var(--color-black);
   font-size: 6vw;

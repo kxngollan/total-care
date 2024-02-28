@@ -1,17 +1,75 @@
-.meetStaff {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+#about {
+  padding: 50px;
 }
 
-.person {
-  width: 20%;
-  padding: 8px;
+#about h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
-.person img {
-  width: 100px;
-  height: 150px;
-  border: 1px solid #000;
-  margin: 0 auto;
+#about p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.where-we-are-based,
+.values,
+.join-us {
+  margin-bottom: 40px;
+}
+
+.where-we-are-based h2,
+.values h2,
+.join-us h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.where-we-are-based p,
+.values ul,
+.join-us p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.values ul {
+  list-style-type: none;
+}
+
+.values ul li {
+  margin-bottom: 10px;
+}
+
+.values ul li strong {
+  margin-right: 10px;
+}
+
+.join-us button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.join-us button:hover {
+  background-color: #0056b3;
+}
+
+.where-we-are-based p {
+  font-style: italic;
+  color: #666;
+}
+
+.values ul {
+  margin-left: 20px;
+}
+
+.values ul li:before {
+  content: "•";
+  margin-right: 8px;
+  color: #007bff;
 }

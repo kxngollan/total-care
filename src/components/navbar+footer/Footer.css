@@ -11,11 +11,12 @@ footer ul {
   flex-wrap: wrap;
   color: #fff;
   justify-content: center;
-  margin-top: 1rem;
+  padding-top: 2rem;
 }
 
 footer ul li {
   font-size: 1.5rem;
   width: 20rem;
   list-style: none;
+  cursor: pointer;
 }

@@ -1,0 +1,37 @@
+/* CSS for Meet the Team section */
+
+.meet-the-team {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.meet-the-team h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.team-member {
+  max-width: 300px;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-size: 16px;
+  line-height: 1.5;
+}

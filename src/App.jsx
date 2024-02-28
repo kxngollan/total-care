@@ -8,6 +8,7 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/navbar+footer/Footer";
 import Candidiates from "./components/canditiates /Candidiates";
 import Clients from "./components/clients/Clients";
+import MeetTheTeam from "./components/about/MeetTheTeam";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/candidates" element={<Candidiates />} />
           <Route path="/jobs" element={<Jobs />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/meet-team" element={<MeetTheTeam />} />
         </Routes>
       </main>
       <Footer />
